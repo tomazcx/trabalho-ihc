@@ -12,7 +12,7 @@
       },
       "root": "",
       "sourceRoot": "src",
-      "prefix": "app",
+      "prefix": "",
       "architect": {
         "build": {
           "builder": "@angular-devkit/build-angular:application",
@@ -26,9 +26,14 @@
             "tsConfig": "tsconfig.app.json",
             "inlineStyleLanguage": "scss",
             "assets": [
+               {
+                 "glob": "**/*",
+                 "input": "src/assets/",
+                 "output": "/assets/"
+              },
               {
-                "glob": "**/*",
-                "input": "public"
+                "glob": "favicon.ico",
+                "input": "public",
               }
             ],
             "styles": [

@@ -1,0 +1,28 @@
+.app-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 51px;
+
+  &__nav {
+    display: flex;
+    align-items: center;
+    gap: 77px;
+    font-size: 14px;
+  }
+
+  &__accessibiliy {
+    display: flex;
+    align-items: center;
+    gap:16px;
+    color: #848484;
+
+    > span {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      padding-right: 16px;
+      border-right: 1.5px solid #848484;
+    }
+  }
+}
