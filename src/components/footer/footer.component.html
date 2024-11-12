@@ -1,0 +1,39 @@
+<footer class="footer">
+  <div class="footer__info">
+    <div class="footer__contact">
+      <img width="135" src="assets/white-ufpr.svg" />
+      <span
+        >Formando Profissionais no<br />
+        Setor de Educação<br />
+        Profissional e Tecnológica</span
+      >
+      <p class="footer__address">
+        <ng-icon name="featherGlobe" color="#FFF" />
+        Rua Dr. Alcides Vieira Arcoverde, 1225, Curitiba (PR)
+      </p>
+    </div>
+    <div class="footer__links">
+      <span> Setor de Educação Profissional e Tecnológica </span>
+      <div class="footer__links-grid">
+        @for (item of links; track item.title) {
+          <div class="footer__link-column">
+            <span>{{ item.title }}</span>
+
+            <div>
+              @for (link of item.links; track link.label) {
+                <a [href]="link.href">{{ link.label }}</a>
+              }
+            </div>
+          </div>
+        }
+      </div>
+    </div>
+  </div>
+  <div class="footer__copyright">
+    <span>©2024 - Universidade Federal do Paraná - SEPT</span>
+    <span
+      >Desenvolvido em Software Livre e hospedado por Tomaz Xavier e Lyandra do
+      Amaral</span
+    >
+  </div>
+</footer>

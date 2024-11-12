@@ -1,23 +1,21 @@
 import { Component, Input } from '@angular/core';
+import { CommonModule, Location } from '@angular/common';
 
 @Component({
   selector: 'header-link',
   standalone: true,
-  imports: [],
+  imports: [CommonModule],
   templateUrl: './header-link.component.html',
-  styleUrl: './header-link.component.scss'
+  styleUrls: ['./header-link.component.scss'],
 })
 export class HeaderLinkComponent {
-  @Input() label:string;
-  @Input() href:string;
-  isActive:boolean;
+  @Input() label: string;
+  @Input() href: string;
+  isActive: boolean;
 
-  constructor(
-    private location: Location
-  ){}
+  constructor(private location: Location) {}
 
-  ngOnInit():void {
-    console.log(this.location.pathname);
+  ngOnInit(): void {
+    this.isActive = this.location.path() === this.href;
   }
-
 }
