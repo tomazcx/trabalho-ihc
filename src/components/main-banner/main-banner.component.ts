@@ -9,5 +9,6 @@ import { Component, Input } from '@angular/core';
 })
 export class MainBannerComponent {
   @Input() title: string
-  @Input() subtitle: string
+  @Input() subtitle?: string
+  @Input() bannerSrc: string
 }

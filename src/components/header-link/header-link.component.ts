@@ -1,10 +1,11 @@
 import { Component, Input } from '@angular/core';
 import { CommonModule, Location } from '@angular/common';
+import { RouterModule } from '@angular/router';
 
 @Component({
   selector: 'header-link',
   standalone: true,
-  imports: [CommonModule],
+  imports: [CommonModule, RouterModule],
   templateUrl: './header-link.component.html',
   styleUrls: ['./header-link.component.scss'],
 })

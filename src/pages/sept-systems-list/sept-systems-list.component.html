@@ -1,0 +1,17 @@
+<main>
+  <main-banner
+    title="Lista de Sistemas"
+    bannerSrc="assets/banners/systems-list.jpg"
+  />
+  <section class="systems-list-section">
+    <go-back-link href="/setor" label="Setor" />
+    <section-title>Lista de Sistemas</section-title>
+    <ul>
+      @for (system of systems; track system.label) {
+        <li>
+          <a [href]="system.href">{{ system.label }}</a>
+        </li>
+      }
+    </ul>
+  </section>
+</main>

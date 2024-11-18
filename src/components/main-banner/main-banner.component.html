@@ -1,8 +1,10 @@
 <section class="main-banner">
-  <img src="assets/banners/home.jpg" />
+  <img [src]="bannerSrc" />
   <div class="main-banner__overlay"></div>
   <div class="main-banner__title-container">
     <h1>{{ title }}</h1>
-    <span>{{ subtitle }}</span>
+    @if (subtitle) {
+      <span>{{ subtitle }}</span>
+    }
   </div>
 </section>

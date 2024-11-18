@@ -33,6 +33,13 @@
     display: flex;
   }
 
+  &__social-media {
+    display: flex;
+    gap: 12px;
+    align-items: center;
+    color: white;
+  }
+
   &__links {
     padding: 23px 22px 53px 21px;
     border: 1px solid white;
@@ -65,11 +72,12 @@
 
       a {
         text-decoration: none;
-        color: #7DA5EF;
+        color: #7da5ef;
+        font-size: 14px;
 
         &:hover {
-          color: #7DA5EFAA;
-          transition: colors .2s ease;
+          color: #7da5efaa;
+          transition: colors 0.2s ease;
         }
       }
     }

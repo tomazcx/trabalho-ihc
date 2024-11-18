@@ -1,0 +1,22 @@
+<section class="home-news-section">
+  <div class="home-news-section__header">
+    <section-title>Últimas Notícias</section-title>
+    <p>
+      Fique por dentro das últimas novidades e eventos do SEPT, acompanhando
+      as<br />
+      notícias mais recentes sobre projetos, cursos e atividades acadêmicas.
+    </p>
+    <app-button label="Ver mais notícias" />
+  </div>
+  <div class="home-news-section__body">
+    @for (item of news; track item.title) {
+      <news-item
+        [title]="item.title"
+        [publishDate]="item.publishDate"
+        [publisher]="item.publisher"
+        [preview]="item.preview"
+        [path]="item.path"
+      />
+    }
+  </div>
+</section>

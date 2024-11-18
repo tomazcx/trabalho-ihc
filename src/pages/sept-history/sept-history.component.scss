@@ -1,0 +1,18 @@
+.history-page {
+  margin-bottom: 76px;
+}
+
+.history-section {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  margin: 0 auto;
+  max-width: 890px;
+  margin-top: 52px;
+
+  p {
+    color: #4b4b4b;
+    line-height: 150%;
+    font-size: 18px;
+  }
+}

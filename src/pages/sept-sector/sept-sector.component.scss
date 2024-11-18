@@ -1,0 +1,29 @@
+.sector-page {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 162px;
+
+  &__title {
+    margin-top: 36px;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    padding: 0px 98px;
+
+    p {
+      font-size: 16px;
+    }
+
+    strong {
+      font-weight: 700;
+    }
+  }
+
+  &__cards {
+    margin-top: 64px;
+    display: grid;
+    padding: 0 98px;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 36px;
+  }
+}

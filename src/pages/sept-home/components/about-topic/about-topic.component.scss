@@ -1,0 +1,27 @@
+.home-about-section-topic{
+  display:flex;
+  flex-direction:column;
+  padding-left: 24px;
+  border-left: 1px solid #848484;
+  gap: 14px;
+
+  span {
+    padding: 6px;
+    background-color: #114BB7;
+    border-radius: 10px;
+    width: 34px;
+    height: 34px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+  }
+
+  strong {
+    font-weight: 700;
+  }
+
+  p {
+    max-width: 70%;
+  }
+
+}

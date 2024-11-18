@@ -1,0 +1,23 @@
+<main class="sector-page">
+  <main-banner
+    title="Explore o Setor de Eduação Profissional e Tecnológica"
+    bannerSrc="assets/banners/sept.jpg"
+  />
+  <section class="sector-page__title">
+    <section-title>Navegue pelas sessões</section-title>
+    <p>
+      Encontre aqui todas as páginas para
+      <strong>atender suas necessidades</strong>
+    </p>
+  </section>
+  <section class="sector-page__cards">
+    @for (card of pageCards; track card.title) {
+      <page-card
+        [title]="card.title"
+        [subtitle]="card.subtitle"
+        [path]="card.path"
+        [bannerSrc]="card.bannerSrc"
+      />
+    }
+  </section>
+</main>

@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { NgIconComponent, provideIcons } from '@ng-icons/core';
-import { featherGlobe } from '@ng-icons/feather-icons';
+import { featherGlobe, featherMapPin } from '@ng-icons/feather-icons';
 
 interface LinksInterface {
   title: string;
@@ -14,7 +14,7 @@ interface LinksInterface {
   selector: 'app-footer',
   standalone: true,
   imports: [NgIconComponent],
-  providers: [provideIcons({ featherGlobe })],
+  providers: [provideIcons({ featherGlobe, featherMapPin })],
   templateUrl: './footer.component.html',
   styleUrl: './footer.component.scss',
 })

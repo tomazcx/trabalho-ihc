@@ -8,7 +8,7 @@ import { HeaderLinkComponent } from '../header-link/header-link.component';
   standalone: true,
   templateUrl: './header.component.html',
   styleUrl: './header.component.scss',
-  imports: [NgIconComponent, HeaderLinkComponent],
+  imports: [NgIconComponent, HeaderLinkComponent, ],
   providers: [provideIcons({ featherGlobe })],
 })
 export class HeaderComponent {}

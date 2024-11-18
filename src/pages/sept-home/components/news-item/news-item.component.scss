@@ -1,0 +1,21 @@
+.home-news-item {
+  display: flex;
+  flex-direction: column;
+  gap: 17px;
+
+  a {
+    font-size: 28px;
+    text-decoration: underline;
+    font-weight: 500;
+    color: black;
+  }
+
+  div p {
+    color: #434343;
+    font-size: 16px;
+  }
+
+  p {
+    font-size: 20px;
+  }
+}
