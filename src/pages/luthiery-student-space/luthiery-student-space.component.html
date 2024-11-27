@@ -1,0 +1,16 @@
+<main class="luthiery-students-space">
+  <main-banner
+    title="Espaço do Estudante"
+    bannerSrc="assets/banners/luthiery-student-space.jpg"
+  />
+  <section>
+    <section-title>Links Importantes</section-title>
+    <ul>
+      @for (system of systems; track system.label) {
+        <li>
+          <a [href]="system.href">{{ system.label }}</a>
+        </li>
+      }
+    </ul>
+  </section>
+</main>

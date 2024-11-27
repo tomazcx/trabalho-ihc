@@ -1,0 +1,39 @@
+<div class="table">
+  <div class="table__header">
+    <div class="table__title">
+      <strong>{{ title }}</strong>
+      @if (subtitleLink) {
+        <a href="#">{{ subtitleLink }}</a>
+      }
+    </div>
+
+    <search-input />
+  </div>
+
+  <table class="table__body">
+    <tr>
+      @for (column of columns; track column) {
+        <th>{{ column }}</th>
+      }
+    </tr>
+    @for (row of body; track row) {
+      <tr>
+        @for (cell of row; track cell) {
+          <td>{{ cell }}</td>
+        }
+      </tr>
+    }
+  </table>
+
+  @if (!hidePagination) {
+    <div class="table__pagination">
+      <span><ng-icon name="featherArrowLeft" /></span>
+      <span class="table__pagination-number">1</span>
+      <span class="table__pagination-number">2</span>
+      <span class="table__pagination-number">3</span>
+      <span>...</span>
+      <span class="table__pagination-number">10</span>
+      <span><ng-icon name="featherArrowRight" /></span>
+    </div>
+  }
+</div>

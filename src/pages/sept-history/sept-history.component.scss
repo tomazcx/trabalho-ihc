@@ -1,12 +1,16 @@
 .history-page {
   margin-bottom: 76px;
+
+  &__container {
+    display:flex;
+    justify-content: center;
+  }
 }
 
 .history-section {
   display: flex;
   flex-direction: column;
   gap: 24px;
-  margin: 0 auto;
   max-width: 890px;
   margin-top: 52px;
 

@@ -16,7 +16,7 @@ export class HeaderLinkComponent {
 
   constructor(private location: Location) {}
 
-  ngOnInit(): void {
+  ngDoCheck(): void {
     this.isActive = this.location.path() === this.href;
   }
 }

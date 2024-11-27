@@ -1,0 +1,28 @@
+<main class="faculty">
+  <main-banner title="Corpo Docente" bannerSrc="assets/banners/faculty.jpg" />
+  <div class="faculty__sections">
+    <section>
+      <go-back-link label="Setor" href="/setor" />
+      <app-table
+        title="Corpo Docente Efetivo"
+        [columns]="sampleColumns"
+        [body]="sampleBody"
+      />
+    </section>
+    <section>
+      <app-table
+        title="Corpo Docente Substituto"
+        subtitleLink="Ver Docentes em férias"
+        [columns]="sampleColumns"
+        [body]="sampleBody"
+      />
+    </section>
+    <section>
+      <app-table
+        title="Docentes de outros setores da UFPR atuantes no SEPT"
+        [columns]="sampleColumns"
+        [body]="sampleBody"
+      />
+    </section>
+  </div>
+</main>
