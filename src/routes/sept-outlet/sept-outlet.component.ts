@@ -21,15 +21,15 @@ export class SeptOutletComponent {
     },
     {
       label: 'Espaço do Estudante',
-      href: '/espaco-estudante',
+      href: '/lista-sistemas',
     },
     {
-      label: 'Pesquisa e Extensão',
-      href: '/pesquisa-e-extensao',
+      label: 'Notícias',
+      href: '/noticias',
     },
     {
-      label: 'Concursos e Testes',
-      href: '/concursos-e-testes',
+      label: 'Corpo Docente',
+      href: '/corpo-docente',
     },
   ];
 }
