@@ -1,0 +1,132 @@
+<main class="sept-internship-form">
+  <main-banner
+    title="Construa seu futuro no SEPT."
+    subtitle="Setor de Educação Profissional e Tecnológica"
+    bannerSrc="assets/banners/internship.jpg"
+  />
+  <section class="sept-internship-form__section">
+    <go-back-link label="Setor" href="/setor" />
+    <section-title>Nova solicitação de estágio</section-title>
+    <p>
+      Preencha esse formulário para ter a sua solicitação avaliada pela
+      coordenação do curso.
+    </p>
+    <form class="sept-internship-form__form">
+      <fieldset>
+        <span>1. Dados pessoais</span>
+        <div class="sept-internship-form__form-row">
+          <div>
+            <label for="firstName">Primeiro Nome<span>*</span></label>
+            <input type="text" name="firstName" id="firstName" required />
+          </div>
+          <div>
+            <label for="surname">Sobrenome<span>*</span></label>
+            <input type="text" id="surname" name="surname" required />
+          </div>
+          <div>
+            <label for="grr">GRR<span>*</span></label>
+            <input
+              placeholder="Ex: GRR20240000"
+              type="text"
+              id="grr"
+              name="grr"
+              required
+            />
+          </div>
+        </div>
+        <div class="sept-internship-form__form-row">
+          <div>
+            <label for="email">Email<span>*</span></label>
+            <input
+              placeholder="Ex: nome.sobrenome@ufpr.br"
+              type="email"
+              id="email"
+              name="email"
+              required
+            />
+          </div>
+          <div>
+            <label for="cpf">CPF<span>*</span></label>
+            <input
+              placeholder="Ex: 000.000.000-00"
+              name="cpf"
+              id="cpf"
+              type="text"
+              required
+            />
+          </div>
+          <div>
+            <label for="birthDate">Data de Nascimento<span>*</span></label>
+            <input
+              placeholder="Ex: dd/MM/yyyy"
+              type="text"
+              id="birthDate"
+              name="birthDate"
+              required
+            />
+          </div>
+        </div>
+      </fieldset>
+
+      <fieldset>
+        <span>2. Endereço</span>
+        <div class="sept-internship-form__form-row">
+          <div>
+            <label for="street">Rua<span>*</span></label>
+            <input type="text" name="street" id="street" required />
+          </div>
+          <div>
+            <label for="number">Número<span>*</span></label>
+            <input type="text" id="number" name="number" required />
+          </div>
+        </div>
+        <div class="sept-internship-form__form-row">
+          <div>
+            <label for="district">Bairro<span>*</span></label>
+            <input type="text" id="district" name="district" required />
+          </div>
+          <div>
+            <label for="city">Cidade<span>*</span></label>
+            <input name="city" id="city" type="text" required />
+          </div>
+          <div>
+            <label for="complement">Complemento</label>
+            <input name="complement" id="complement" type="text" />
+          </div>
+        </div>
+      </fieldset>
+      <fieldset>
+        <span>3. Dados Acadêmicos</span>
+        <div class="sept-internship-form__form-row">
+          <div>
+            <label for="course">Curso<span>*</span></label>
+            <select name="course" id="course" required>
+              <option value="asd">Análise e Desenvolvimento de Sistemas</option>
+              <option value="secretarian">Secretariado</option>
+              <option value="luthiery">Luteria</option>
+            </select>
+          </div>
+          <div>
+            <label for="period">Período<span>*</span></label>
+            <input
+              placeholder="Ex: Primeiro"
+              type="text"
+              name="period"
+              id="period"
+              required
+            />
+          </div>
+          <div>
+            <label for="teacher"
+              >Nome do professor orientador<span>*</span></label
+            >
+            <input type="text" id="teacher" name="teacher" required />
+          </div>
+        </div>
+      </fieldset>
+      <div class="sept-internship-form__form-footer">
+        <app-button label="Enviar" />
+      </div>
+    </form>
+  </section>
+</main>

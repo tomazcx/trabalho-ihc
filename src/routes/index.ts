@@ -7,6 +7,7 @@ import { SeptCollegialComponent } from '../pages/sept-collegial/sept-collegial.c
 import { SeptFacultyComponent } from '../pages/sept-faculty/sept-faculty.component';
 import { SeptHistoryComponent } from '../pages/sept-history/sept-history.component';
 import { SeptHomeComponent } from '../pages/sept-home/sept-home.component';
+import { SeptInternshipFormComponent } from '../pages/sept-internship-form/sept-internship-form.component';
 import { SeptSectorUnitiesComponent } from '../pages/sept-sector-unities/sept-sector-unities.component';
 import { SeptSectorComponent } from '../pages/sept-sector/sept-sector.component';
 import { SeptSystemsListComponent } from '../pages/sept-systems-list/sept-systems-list.component';
@@ -25,6 +26,7 @@ export const routes = [
       { path: 'corpo-docente', component: SeptFacultyComponent },
       { path: 'unidades-setor', component: SeptSectorUnitiesComponent },
       { path: 'colegiados', component: SeptCollegialComponent },
+      { path: 'solicitacao-estagio', component: SeptInternshipFormComponent },
     ],
   },
   {
