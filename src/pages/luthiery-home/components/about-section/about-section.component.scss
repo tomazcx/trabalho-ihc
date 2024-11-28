@@ -1,0 +1,76 @@
+.luthiery-about-section {
+  padding: 120px 95px;
+
+  &__header {
+    display: flex;
+    justify-content: space-between;
+
+    h2 {
+      font-size: 48px;
+    }
+
+    p {
+      font-size: 24px;
+      line-height: 180%;
+      max-width: 780px;
+    }
+  }
+
+  &__body {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__text {
+    display: flex;
+    flex-direction: column;
+    gap: 36px;
+    max-width: 550px;
+    margin-top: 64px;
+
+    p {
+      font-size: 16px;
+      line-height: 150%;
+    }
+  }
+
+  &__figures {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  &__figure-row {
+    display: flex;
+    gap: 28px;
+  }
+
+  &__figure {
+    display: flex;
+    max-width: 227px;
+    gap: 8px;
+    flex-direction: column;
+
+    &:nth-child(2) {
+      position: relative;
+      top: 16px;
+    }
+
+    img {
+      object-fit: contain;
+      max-height: 227px;
+    }
+
+    span {
+      &:nth-child(2) {
+        font-size: 16px;
+        color: black;
+      }
+
+      &:nth-child(3) {
+        font-size: 12px;
+        color: #575757;
+      }
+    }
+  }
+}

@@ -1,0 +1,58 @@
+.luthiery-mimu {
+  &__about {
+    padding: 92px 84px 100px 84px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    p {
+      font-size: 26px;
+      max-width: 850px;
+      line-height: 180%;
+    }
+
+    h2 {
+      font-size: 48px;
+    }
+  }
+
+  &__content {
+    display: flex;
+    justify-content: space-between;
+    padding: 92px 84px 100px 84px;
+
+    p {
+      max-width: 675px;
+      line-height: 150%;
+      font-size: 20px;
+    }
+  }
+
+  &__content-text {
+    display: flex;
+    flex-direction: column;
+    gap: 110px;
+  }
+
+  &__content-figures {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  &__content-figure-row {
+    display: flex;
+    gap: 28px;
+
+    img {
+      max-width: 327px;
+      max-height: 327px;
+      object-fit: contain;
+
+      &:nth-child(2) {
+        position: relative;
+        top: 16px;
+      }
+    }
+  }
+}

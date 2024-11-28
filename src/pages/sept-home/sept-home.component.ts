@@ -3,6 +3,7 @@ import { MainBannerComponent } from '../../components';
 import {
   AboutSectionComponent,
   AcademicSectionComponent,
+  CoursesSectionComponent,
   NewsSectionComponent,
 } from './components';
 
@@ -14,8 +15,12 @@ import {
     AboutSectionComponent,
     NewsSectionComponent,
     AcademicSectionComponent,
+    CoursesSectionComponent
   ],
   templateUrl: './sept-home.component.html',
-  styleUrl: './sept-home.component.scss',
+  styleUrls: [
+    './sept-home.component.scss',
+  ],
 })
-export class SeptHomeComponent {}
+export class SeptHomeComponent {
+}
