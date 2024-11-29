@@ -39,7 +39,7 @@ export const routes = [
     children: [
       { path: '', component: LuthieryHomeComponent },
       { path: 'mimu', component: LuthieryMimuComponent },
-      { path: 'colegiados', component: LuthieryFacultyComponent },
+      { path: 'corpo-docente', component: LuthieryFacultyComponent },
       {
         path: 'coordenacao',
         component: LuthieryCourseCoordinationComponent,
