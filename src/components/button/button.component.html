@@ -1,5 +1,9 @@
 @if (href) {
-  <a class="app-button" [href]="href">{{ label }}</a>
+  @if (routerLink) {
+    <a class="app-button" [routerLink]="href">{{ label }}</a>
+  } @else {
+    <a class="app-button" [href]="href">{{ label }}</a>
+  }
 } @else {
   <button class="app-button">{{ label }}</button>
 }

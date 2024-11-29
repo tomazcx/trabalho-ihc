@@ -25,7 +25,7 @@ export class NewsSectionComponent {
       publisher: 'Belinski',
       preview:
         'Ativação de Duplo Fator de Autenticação nas contas do Microsoft 365 Seguindo a política de […]',
-      path: '/news/1',
+      path: '/noticia',
     },
     {
       title: 'Inventário patrimonial 2024',
@@ -33,7 +33,7 @@ export class NewsSectionComponent {
       publisher: 'Belinski',
       preview:
         'O Inventário 2024 do acervo patrimonial da UFPR se encerrará no dia 30/09/2024. Gestão do […]',
-      path: '/news/1',
+      path: '/noticia',
     },
     {
       title: 'Inscrições abertas para vaga docente em Contabilidade',
@@ -41,7 +41,7 @@ export class NewsSectionComponent {
       publisher: 'Belinski',
       preview:
         'Teste Seletivo docente na área de Contabilidade está com inscrições abertas até dia 23 de […]',
-      path: '/news/1',
+      path: '/noticia',
     },
     {
       title: 'Inscrições no 31º EVINCI ou 16º EINTI até dia 22/08',
@@ -49,7 +49,7 @@ export class NewsSectionComponent {
       publisher: 'Belinski',
       preview:
         'Prezadas e Prezados Docentes vinculados ao Programa de Iniciação Científica e Tecnológica (ICT) do Edital […]',
-      path: '/news/1',
+      path: '/noticia'
     },
   ];
 }

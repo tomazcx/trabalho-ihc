@@ -1,9 +1,10 @@
 import { Component, Input } from '@angular/core';
+import { RouterModule } from '@angular/router';
 
 @Component({
   selector: 'news-item',
   standalone: true,
-  imports: [],
+  imports: [RouterModule],
   templateUrl: './news-item.component.html',
   styleUrl: './news-item.component.scss',
 })

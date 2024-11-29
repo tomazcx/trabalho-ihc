@@ -6,7 +6,7 @@
       as<br />
       notícias mais recentes sobre projetos, cursos e atividades acadêmicas.
     </p>
-    <app-button label="Ver mais notícias" />
+    <app-button [routerLink]="true" label="Ver mais notícias" href="noticias" />
   </div>
   <div class="home-news-section__body">
     @for (item of news; track item.title) {
