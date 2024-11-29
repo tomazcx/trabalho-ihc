@@ -1,0 +1,23 @@
+.sept-news {
+  margin-bottom: 76px;
+
+  &__container {
+    display: flex;
+    justify-content: center;
+  }
+
+  &__section {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    max-width: 890px;
+    margin-top: 52px;
+
+    p {
+      color: #4b4b4b;
+      line-height: 150%;
+      font-size: 18px;
+      margin-bottom: 60px;
+    }
+  }
+}

@@ -1,0 +1,15 @@
+.pagination {
+  display: flex;
+  align-items: center;
+  gap: 27px;
+
+  span {
+    cursor: pointer;
+  }
+
+  &__number {
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
