@@ -45,7 +45,7 @@ export class SeptSectorComponent {
     {
       title: 'Cursos',
       subtitle: 'Conheça os cursos do setor',
-      path: '#',
+      path: '/luteria',
       bannerSrc: 'assets/banners/courses.jpg',
     },
     {
